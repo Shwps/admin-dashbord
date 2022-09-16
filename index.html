@@ -25,12 +25,19 @@
             src="svg/bell-circle-outline.svg"
             alt="notification bell "
           />
-          <img src="png/bear.png" alt="profile-pic" class="profile-pic-small">
+          <img src="png/bear.png" alt="profile-pic" class="profile-pic-small" />
           <div class="fullname">Pawly Pawson</div>
         </div>
-        <div class="greeting-container">
-          <img src="" alt="">
-          <div class="greeting"><p>Hi there,</p><h2>Pawly</h2></div>
+        <div id="greeting-container">
+          <img
+            src="png/bear.png"
+            alt="profile picture"
+            class="profile-pic-large"
+          />
+          <div class="greeting">
+            <p>Hi there,</p>
+            <h3>Pawly Pawson</h3>
+          </div>
         </div>
         <div class="button-row">
           <button>New</button>
@@ -39,40 +46,274 @@
         </div>
       </header>
       <aside id="side-nav">
-        <div><h1>Dashbord</h1></div>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+        <div id="logo-container">
+          <img src="png/paw-print.png" alt="" class="website-logo" />
+          <h1>Dashbord</h1>
+        </div>
+        <nav id="main-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/home.svg"
+                  alt=""
+                />Home</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/account-circle-outline.svg"
+                  alt=""
+                />Profile</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/message-outline.svg"
+                  alt=""
+                />Messages</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/history.svg"
+                  alt=""
+                />History</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/briefcase.svg"
+                  alt=""
+                />Tasks</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  class="icon white-filter"
+                  src="svg/account-group-outline.svg"
+                  alt=""
+                />Communities</a
+              >
+            </li>
           </ul>
         </nav>
         <nav>
-          <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+          <ul class="nav-list">
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  src="svg/cog-outline.svg"
+                  alt=""
+                  class="icon white-filter"
+                />Settings</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  src="svg/face-agent.svg"
+                  alt=""
+                  class="icon white-filter"
+                />Support</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-item"
+                ><img
+                  src="svg/shield-half-full.svg"
+                  alt=""
+                  class="icon white-filter"
+                />Privacy</a
+              >
+            </li>
           </ul>
         </nav>
       </aside>
       <main>
         <article>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <h2 id="projects-heading">Your Projects</h2>
+          <div class="article-cards">
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure, quis
+                  libero, asperiores obcaecati doloribus dicta earum accusamus
+                  molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure, quis
+                  libero, asperiores obcaecati doloribus dicta earum accusamus
+                  molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure, quis
+                  libero, asperiores obcaecati doloribus dicta earum accusamus
+                  molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure,
+                  quis libero, asperiores obcaecati doloribus dicta earum
+                  accusamus molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure, quis
+                  libero, asperiores obcaecati doloribus dicta earum accusamus
+                  molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Heading</h3>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis id aliquid quasi minima dolor cupiditate, iure, quis
+                  libero, asperiores obcaecati doloribus dicta earum accusamus
+                  molestiae tempore illo magnam labore repellendus!
+                </p>
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="svg/star-plus-outline.svg"
+                  alt="star"
+                  class="card-icon"
+                /><img
+                  src="svg/atom-variant.svg"
+                  alt="atom"
+                  class="card-icon"
+                /><img
+                  src="svg/share-variant-outline.svg"
+                  alt="share"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+          </div>
         </article>
         <aside id="sidebar">
+          <h2>Announcements</h2>
           <div class="side-card"></div>
+          <h2>Trending</h2>
           <div class="side-card"></div>
         </aside>
       </main>
     </div>
-    <footer><a href="https://www.flaticon.com/free-icons/bear" title="bear icons">Bear icons created by Freepik - Flaticon</a></footer>
+    <footer>
+      <a href="https://www.flaticon.com/free-icons/bear" title="bear icons"
+        >Bear icons created by Freepik - Flaticon</a
+      >
+    </footer>
   </body>
 </html>
