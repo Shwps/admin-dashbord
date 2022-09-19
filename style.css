@@ -134,6 +134,8 @@ table {
 :root {
   --accent-color: #faaa1f;
   --text-color: #3b3939;
+  --accent-color-filter:invert(78%) sepia(69%) saturate(2724%) hue-rotate(344deg)
+  brightness(104%) contrast(96%);
 }
 
 * {
@@ -142,7 +144,7 @@ table {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 4fr 1fr;
   height: 100vh;
 }
 
@@ -196,8 +198,8 @@ article {
 
 .article-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
-  gap:24px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 30%));
+  gap: 24px;
 }
 
 #projects-heading {
@@ -212,6 +214,11 @@ article {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-content {
@@ -222,17 +229,41 @@ article {
   display: flex;
   justify-content: flex-end;
 
-  gap:1em;
+  gap: 1em;
 }
 
 .card-icon {
-  width:24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.card-icon:hover {
+  filter:var(--accent-color-filter);
+}
+
+.user-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
 }
 
 .side-card {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   min-height: 20%;
+  padding: 2rem;
+  display: grid;
+  font-size: 14px;
+}
+
+.side-card-content {
+  padding: 10px;
+  border-bottom: solid 1px rgba(153, 148, 148, 0.63);
+}
+
+#last-side-card-content {
+  border-bottom: none;
 }
 
 .search {
@@ -279,6 +310,13 @@ article {
   gap: 1rem;
 }
 
+.text-container {
+}
+
+.card-shadow {
+  box-shadow: 2px 2px 8px 2px rgba(129, 125, 125, 0.616);
+}
+
 #greeting-container {
   display: grid;
   grid-template-columns: 1fr 9fr;
@@ -317,6 +355,33 @@ article {
     brightness(105%) contrast(101%);
 }
 
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-card, .notifications, .fullname, .profile-pic-small {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #3b3939;
+  grid-area: 3/ 1 / 4 /3;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+
+
 button {
   padding: 10px;
   width: 100px;
@@ -325,4 +390,5 @@ button {
   color: rgb(255, 255, 255);
   font-weight: 500;
   background-color: #ba4c2e;
+  cursor: pointer;
 }
